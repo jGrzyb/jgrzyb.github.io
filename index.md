@@ -2,31 +2,43 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[mój profil]([./another-page.html](https://github.com/jGrzyb)).
 
-There should be whitespace between paragraphs.
+# README.md
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## Witam na mojej stronie!
 
-# Header 1
+Jest to projekt zrobioy w ramach przedmiotu Narzedzia Informatyczne na Krakowskiej uczelni AGH
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### A tutaj kawałek mojego kodu:
 
-## Header 2
+```cpp
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+#include <windows.h>
+#include <cstdio>
+#include <conio.h>
 
-### Header 3
+using namespace std;
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+string board[21][21], board1[21];
+void place();
+
+int main()
+{
+    place();
+    for(int i=0; i<21; i++)
+    for(int j=0; j<21; j++)
+    cout << i << ":" << j << " " << board[i][j] << "     ";
+    return 0;
+}
+
+void place()
+{
+    for(int i=0; i<21; i++)
+    {
+        board[i][0]="| ";
+        board[20][i]="__";
 }
 ```
 
